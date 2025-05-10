@@ -14,7 +14,7 @@ on:
 
 jobs:
   release:
-    runs-on: macOS-14
+    runs-on: macOS-15
     steps:
 
       - uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
       - name: Clone libXray at tag
         uses: actions/checkout@v3
         with:
-          repository: 'CodeWithTamim/libXray'
+          repository: 'XTLS/libXray'
           path: 'xray'
           ref: ${{ github.event.inputs.tag }}
 
