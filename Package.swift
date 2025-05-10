@@ -12,7 +12,7 @@ let package = Package(
     .binaryTarget(
       name: "XrayKit",
       url: "https://github.com/CodeWithTamim/XrayKit/releases/download/1.0.0/XrayKit.xcframework.zip",
-      checksum: "0d9facc797d7170ad4b54916279bab0ca4514e5481612671c021f1d1526e634d"
+      checksum: "ea55ce8fdda721bcb843233124e7d0a8f9259aba78d5da3421e40e7075956108"
     )
   ]
 )
