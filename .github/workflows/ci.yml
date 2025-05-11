@@ -22,7 +22,7 @@ jobs:
       - name: Clone libXray at tag
         uses: actions/checkout@v3
         with:
-          repository: 'XTLS/libXray'
+          repository: 'CodeWithTamim/libXray'
           path: 'xray'
           ref: ${{ github.event.inputs.tag }}
 
