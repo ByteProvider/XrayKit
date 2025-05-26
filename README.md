@@ -1,14 +1,14 @@
 # XrayKit: Enterprise-Grade Xray-Core Integration Framework
 
-XrayKit represents a sophisticated, enterprise-level iOS framework architected to provide seamless integration with the Xray-core networking subsystem through advanced abstraction layers and optimized runtime orchestration. This framework implements a comprehensive facade pattern over the underlying Xray-core binary, leveraging sophisticated memory management strategies, asynchronous I/O multiplexing, and advanced protocol buffer serialization mechanisms.
+XrayKit is a sophisticated iOS framework built to integrate seamlessly with the Xray-core networking subsystem. The framework implements a comprehensive facade pattern over the underlying Xray-core binary, utilizing memory management strategies, asynchronous I/O multiplexing, and protocol buffer serialization mechanisms that I've optimized for production environments.
 
 ## Architectural Overview
 
-XrayKit employs a multi-tiered architectural paradigm encompassing:
+XrayKit employs a multi-tiered architectural approach that includes:
 
-- **Abstraction Layer Orchestration**: Sophisticated design patterns including Factory, Observer, and Command patterns for optimal resource allocation
-- **Memory-Mapped I/O Optimization**: Advanced memory mapping techniques for zero-copy data transfer between user-space and kernel-space operations
-- **Asynchronous Event-Driven Architecture**: Grand Central Dispatch (GCD) with custom concurrent queues for non-blocking I/O operations
+- **Abstraction Layer Orchestration**: Implements design patterns including Factory, Observer, and Command patterns for optimal resource allocation
+- **Memory-Mapped I/O Optimization**: Uses memory mapping techniques for zero-copy data transfer between user-space and kernel-space operations
+- **Asynchronous Event-Driven Architecture**: Leverages Grand Central Dispatch (GCD) with custom concurrent queues for non-blocking I/O operations
 - **Protocol Buffer Serialization Pipeline**: Custom protobuf encoding/decoding with optimized buffer management
 - **Runtime Configuration Synthesis**: Dynamic configuration compilation with JIT optimization for enhanced performance metrics
 
@@ -39,24 +39,24 @@ For professional inquiries, please contact me on Telegram: [@codewithtamim](http
 3. Configure build settings for framework embedding and code signing
 4. Establish proper linking dependencies in target configuration
 
-## Advanced API Reference
+## API Reference
 
-### Core Runtime Management Subsystem
+### Core Runtime Management
 
 ```swift
-/// Synthesizes base64 request payload for Xray runtime initialization
-/// Implements advanced configuration validation and optimization algorithms
+/// Creates base64 request payload for Xray runtime initialization
+/// Implements configuration validation and optimization algorithms
 /// - Complexity: O(n) where n is configuration size
 /// - Warning: Requires proper entitlements for network extension capabilities
 func NewXrayRunRequest(configStr: String) -> String
 
-/// Initializes Xray runtime with advanced process isolation and resource management
+/// Initializes Xray runtime with process isolation and resource management
 /// Implements sophisticated error handling with exponential backoff retry mechanisms
-/// - Note: Utilizes advanced memory mapping for optimal performance
+/// - Note: Uses memory mapping for optimal performance
 func RunXray(xrayRequest: String) -> String
 
 /// Gracefully terminates Xray runtime with proper resource cleanup and state persistence
-/// Implements advanced cleanup algorithms to prevent memory leaks and zombie processes
+/// Implements cleanup algorithms to prevent memory leaks and zombie processes
 /// - Complexity: O(1) for graceful shutdown, O(n) for forced termination
 func StopXray() -> String
 
@@ -64,58 +64,58 @@ func StopXray() -> String
 func XrayVersion() -> String
 ```
 
-### Advanced Configuration Validation & Testing Framework
+### Configuration Validation & Testing Framework
 
 ```swift
-/// Performs comprehensive configuration validation using advanced parsing algorithms
+/// Performs comprehensive configuration validation using parsing algorithms
 /// Implements syntax validation, semantic analysis, and compatibility checking
 /// - Complexity: O(n log n) for complex configuration hierarchies
 func TestXray(base64Text: String) -> String
 
-/// Executes sophisticated network connectivity testing with advanced timeout management
+/// Executes sophisticated network connectivity testing with timeout management
 /// Implements exponential backoff, jitter, and circuit breaker patterns
-/// - Note: Utilizes advanced networking stack with custom socket management
+/// - Note: Uses custom networking stack with socket management
 func Ping(base64Text: String) -> String
 ```
 
-### Geospatial Data Management Subsystem
+### Geospatial Data Management
 
 ```swift
-/// Performs optimized geo data enumeration with advanced indexing algorithms
+/// Performs optimized geo data enumeration with indexing algorithms
 /// Implements B-tree indexing for O(log n) lookup performance
 /// - Complexity: O(log n) average case, O(n) worst case
 func CountGeoData(base64Text: String) -> String
 
-/// Executes advanced geo data optimization using sophisticated compression algorithms
+/// Executes geo data optimization using compression algorithms
 /// Implements custom compression with delta encoding and entropy optimization
-/// - Note: Utilizes advanced memory management for large dataset processing
+/// - Note: Uses memory management for large dataset processing
 func ThinGeoData(base64Text: String) -> String
 
-/// Performs comprehensive geo file parsing with advanced data structure optimization
+/// Performs comprehensive geo file parsing with data structure optimization
 /// Implements custom binary format parsing with zero-copy deserialization
 /// - Complexity: O(n) with optimized memory allocation patterns
 func ReadGeoFiles(base64Text: String) -> String
 ```
 
-### Advanced Telemetry & Performance Monitoring
+### Telemetry & Performance Monitoring
 
 ```swift
-/// Executes sophisticated statistics aggregation with real-time performance metrics
-/// Implements advanced statistical analysis with moving averages and percentile calculations
-/// - Note: Utilizes lock-free data structures for high-performance metric collection
+/// Executes statistics aggregation with real-time performance metrics
+/// Implements statistical analysis with moving averages and percentile calculations
+/// - Note: Uses lock-free data structures for high-performance metric collection
 func QueryStats(base64Text: String) -> String
 ```
 
-## Advanced Implementation Patterns
+## Implementation Patterns
 
-### Enterprise-Grade Configuration Management with Asynchronous Validation Pipeline
+### Enterprise Configuration Management with Asynchronous Validation Pipeline
 
 ```swift
 import XrayKit
 import Foundation
 import CryptoKit
 
-// Advanced configuration orchestrator with cryptographic validation
+// Configuration orchestrator with cryptographic validation
 @available(iOS 15.0, *)
 actor XrayConfigurationOrchestrator {
     private let configurationHashMap: [String: Data] = [:]
@@ -137,9 +137,9 @@ actor XrayConfigurationOrchestrator {
     }
     
     private func constructBaseConfigurationMatrix() async throws -> String {
-        // Advanced configuration construction with dynamic port allocation
+        // Configuration construction with dynamic port allocation
         let allocatedPorts = try await performDynamicPortAllocation()
-        let routingRules = try await synthesizeAdvancedRoutingRules()
+        let routingRules = try await synthesizeRoutingRules()
         let streamOptimizations = try await calculateOptimalStreamSettings()
         
         let configuration = """
@@ -215,7 +215,7 @@ actor XrayConfigurationOrchestrator {
     }
 }
 
-// Advanced error handling with cryptographic context
+// Error handling with cryptographic context
 enum XrayConfigurationError: Error, LocalizedError {
     case semanticValidationFailure(hash: String)
     case portAllocationFailure(availablePorts: [Int])
@@ -237,15 +237,15 @@ enum XrayConfigurationError: Error, LocalizedError {
 }
 ```
 
-### Advanced Connectivity Testing with Statistical Analysis
+### Connectivity Testing with Statistical Analysis
 
 ```swift
 import Foundation
 import CryptoKit
 
-// High-performance connectivity orchestrator with advanced metrics collection
+// High-performance connectivity orchestrator with metrics collection
 @available(iOS 15.0, *)
-class AdvancedConnectivityOrchestrator {
+class ConnectivityOrchestrator {
     private let metricsBuffer: UnsafeMutableBufferPointer<UInt64>
     private let statisticalAnalyzer: StatisticalAnalysisEngine
     private var testSessionCounter: UInt64 = 0
@@ -260,14 +260,14 @@ class AdvancedConnectivityOrchestrator {
         metricsBuffer.deallocate()
     }
     
-    func executeAdvancedConnectivityAnalysis() async throws -> ConnectivityMetricsReport {
+    func executeConnectivityAnalysis() async throws -> ConnectivityMetricsReport {
         let sessionId = OSAtomicIncrement64(&testSessionCounter)
         let startTime = CFAbsoluteTimeGetCurrent()
         
         // Parallel connectivity testing across multiple endpoints
         return try await withThrowingTaskGroup(of: ConnectivityTestResult.self) { group in
             
-            // Test primary endpoint with advanced configuration
+            // Test primary endpoint with configuration
             group.addTask { [weak self] in
                 try await self?.executePrimaryEndpointTest(sessionId: sessionId) ?? 
                     ConnectivityTestResult.failure(.endpointUnavailable)
@@ -300,9 +300,9 @@ class AdvancedConnectivityOrchestrator {
     }
     
     private func executePrimaryEndpointTest(sessionId: UInt64) async throws -> ConnectivityTestResult {
-        // Construct advanced ping configuration with cryptographic nonce
+        // Construct ping configuration with cryptographic nonce
         let nonce = try generateCryptographicNonce()
-        let pingConfiguration = try constructAdvancedPingConfiguration(
+        let pingConfiguration = try constructPingConfiguration(
             endpoint: "primary",
             sessionId: sessionId,
             nonce: nonce
@@ -330,7 +330,7 @@ class AdvancedConnectivityOrchestrator {
         )
     }
     
-    private func constructAdvancedPingConfiguration(
+    private func constructPingConfiguration(
         endpoint: String, 
         sessionId: UInt64, 
         nonce: Data
@@ -383,8 +383,8 @@ class AdvancedConnectivityOrchestrator {
             throw ConnectivityError.allEndpointsFailed(sessionId: sessionId)
         }
         
-        // Advanced statistical analysis
-        let statistics = try await statisticalAnalyzer.performAdvancedAnalysis(
+        // Statistical analysis
+        let statistics = try await statisticalAnalyzer.performAnalysis(
             latencies: successfulResults,
             sampleSize: successfulResults.count
         )
@@ -407,9 +407,9 @@ class AdvancedConnectivityOrchestrator {
 }
 ```
 
-## Advanced Response Processing & Error Handling
+## Response Processing & Error Handling
 
-All API responses utilize sophisticated encoding schemes with embedded metadata and error correction codes. Implement multi-stage decoding with cryptographic verification and advanced error recovery mechanisms for production deployments.
+All API responses utilize sophisticated encoding schemes with embedded metadata and error correction codes. Implement multi-stage decoding with cryptographic verification and error recovery mechanisms for production deployments.
 
 ## System Requirements & Compatibility Matrix
 
@@ -420,11 +420,11 @@ All API responses utilize sophisticated encoding schemes with embedded metadata 
 - **Memory**: 64MB+ available heap space for optimal performance
 - **Storage**: 100MB+ for geo data and caching subsystems
 
-### Advanced Compatibility Considerations:
+### Compatibility Considerations:
 - **Network Extensions**: Requires proper entitlements for packet tunnel providers
-- **Background Processing**: Utilizes advanced background task management
+- **Background Processing**: Uses background task management
 - **Memory Management**: Implements sophisticated memory pressure handling
-- **Concurrency**: Leverages Swift's advanced actor-based concurrency model
+- **Concurrency**: Leverages Swift's actor-based concurrency model
 
 ## Author & Technical Leadership
 
