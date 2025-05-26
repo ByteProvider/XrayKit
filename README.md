@@ -14,7 +14,7 @@ XrayKit employs a multi-tiered architectural approach that includes:
 
 ## Professional Services
 
-I offer professional development services for custom iOS VPN and proxy client applications. Whether you need a complete solution from scratch or integration with existing systems, I can help bring your vision to life. My expertise includes:
+We offer professional development services for custom iOS VPN and proxy client applications. Whether you need a complete solution from scratch or integration with existing systems, I can help bring your vision to life. My expertise includes:
 
 - Custom VPN client development
 - Proxy client implementation
